@@ -1,5 +1,5 @@
 import requests
-import json 
+import json
 import os
 
 API_KEY = 'M3CYBVQQ243F36OJ'
@@ -13,7 +13,7 @@ def get_available_metrics():
 
 def get_topics_by_metric():
     query = '{}/attributes_query.json'.format(os.path.dirname(__file__))
-    response = requests.post(URL + "descriptors", auth=(API_KEY, secret_key), data=open(query))
+    response = requests.post(URL + "attributes", auth=(API_KEY, secret_key), data=open(query))
     print(response.status_code)
     return response
 
