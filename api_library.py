@@ -2,8 +2,8 @@ import requests
 import json
 import os
 
-API_KEY = 'M3CYBVQQ243F36OJ'
-secret_key = 'XSzohRenAfmqEHHAA4d9hJV66cm5KRjxUuHGlh89xtX4VqaLmsw7aeo6FZimXoH6'
+API_KEY = ''
+secret_key = ''
 URL = "https://api.telemetry.confluent.cloud/v1/metrics/cloud/"
 
 def get_available_metrics():
