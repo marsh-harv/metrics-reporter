@@ -138,9 +138,8 @@ def get_sent_bytes_prod():
     print(response.status_code)
     return response
     
-'''
-get_received_bytes_dev()
-get_sent_bytes_dev()
-get_received_bytes_prod()
-get_sent_bytes_prod()
-'''
+def retained_bytes_dev(path):
+    query = path
+    response = requests.post(URL + "query", auth=(API_KEY, secret_key), json=query)
+    print(response.status_code)
+    return response
